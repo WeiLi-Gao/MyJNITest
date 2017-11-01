@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mTxt = (TextView) findViewById(R.id.test);
         nu = new NdkJniUtils();
-        mTxt.setText(nu.getMyname());
+        mTxt.setText(nu.getMyName());
     }
 
 }

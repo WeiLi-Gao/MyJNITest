@@ -13,5 +13,7 @@ public class NdkJniUtils {
 
 
     public native String getCLanguageString();
-    public native String getMyname();
+    public native String getMyNamee(String name,int age);
+    public native int getMyAge(String name,int age);
+    public native boolean getIsRight(String name,int age,boolean is);
 }

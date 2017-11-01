@@ -17,11 +17,27 @@ JNIEXPORT jstring JNICALL Java_com_example_gaoweili_myjni_NdkJniUtils_getCLangua
 
 /*
  * Class:     com_example_gaoweili_myjni_NdkJniUtils
- * Method:    getMyname
- * Signature: ()Ljava/lang/String;
+ * Method:    getMyNamee
+ * Signature: (Ljava/lang/String;I)Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_com_example_gaoweili_myjni_NdkJniUtils_getMyname
-        (JNIEnv *, jobject);
+JNIEXPORT jstring JNICALL Java_com_example_gaoweili_myjni_NdkJniUtils_getMyNamee
+        (JNIEnv *, jobject, jstring, jint);
+
+/*
+ * Class:     com_example_gaoweili_myjni_NdkJniUtils
+ * Method:    getMyAge
+ * Signature: (Ljava/lang/String;I)I
+ */
+JNIEXPORT jint JNICALL Java_com_example_gaoweili_myjni_NdkJniUtils_getMyAge
+        (JNIEnv *, jobject, jstring, jint);
+
+/*
+ * Class:     com_example_gaoweili_myjni_NdkJniUtils
+ * Method:    getIsRight
+ * Signature: (Ljava/lang/String;IZ)Z
+ */
+JNIEXPORT jboolean JNICALL Java_com_example_gaoweili_myjni_NdkJniUtils_getIsRight
+        (JNIEnv *, jobject, jstring, jint, jboolean);
 
 #ifdef __cplusplus
 }

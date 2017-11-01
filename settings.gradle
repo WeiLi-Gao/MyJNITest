@@ -1,1 +1,1 @@
-include ':testjni', ':usejni'
+include ':testjni', ':usejni', ':jnistatictest', ':jniactitest'

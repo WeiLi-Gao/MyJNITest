@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MyJNITest.iml" filepath="$PROJECT_DIR$/MyJNITest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jniactitest/jniactitest.iml" filepath="$PROJECT_DIR$/jniactitest/jniactitest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jnistatictest/jnistatictest.iml" filepath="$PROJECT_DIR$/jnistatictest/jnistatictest.iml" />
       <module fileurl="file://$PROJECT_DIR$/testjni/testjni.iml" filepath="$PROJECT_DIR$/testjni/testjni.iml" />
       <module fileurl="file://$PROJECT_DIR$/usejni/usejni.iml" filepath="$PROJECT_DIR$/usejni/usejni.iml" />
     </modules>

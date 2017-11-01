@@ -8,6 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/jniactitest" />
+            <option value="$PROJECT_DIR$/jnistatictest" />
             <option value="$PROJECT_DIR$/testjni" />
             <option value="$PROJECT_DIR$/usejni" />
           </set>
