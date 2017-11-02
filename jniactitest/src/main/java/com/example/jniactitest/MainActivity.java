@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mTxt = (TextView) findViewById(R.id.test);
         nu = new StaticJni();
-        mTxt.setText(nu.getStringFromC()+ "\n");
+        mTxt.setText(nu.getStringFromC()+ "\n" +nu.getIntFromC(3));
 
     }
 }

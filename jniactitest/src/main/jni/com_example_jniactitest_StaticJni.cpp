@@ -12,6 +12,9 @@ jstring returnString(JNIEnv *env,jobject jobj){
     char* str = "I come from activity C＋＋";
     return env->NewStringUTF(str);
 }
+jint returnInt(JNIEnv *env,jobject jobj, jint num1){
+    return num1 ;
+}
 
 /*需要注册的函数列表，放在JNINativeMethod 类型的数组中，
 以后如果需要增加函数，只需在这里添加就行了
@@ -21,7 +24,8 @@ jstring returnString(JNIEnv *env,jobject jobj){
 3.C/C++中对应函数的函数名（地址）
 */
 static JNINativeMethod getMethods[] = {
-        {"getStringFromC","()Ljava/lang/String;",(void *)returnString }
+        {"getStringFromC","()Ljava/lang/String;",(void *)returnString },
+        {"getIntFromC","(I)I",(void *)returnInt }
 };
 
 //此函数通过调用JNI中 RegisterNatives 方法来注册我们的函数

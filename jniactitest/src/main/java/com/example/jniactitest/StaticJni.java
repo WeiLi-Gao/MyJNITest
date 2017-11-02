@@ -19,6 +19,6 @@ public class StaticJni {
         }
     }
 
-
+    public native int getIntFromC(int num1);
     public native String getStringFromC();
 }
