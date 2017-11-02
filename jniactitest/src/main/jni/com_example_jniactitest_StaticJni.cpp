@@ -6,6 +6,9 @@
 #include <iostream>
 using namespace std;
 
+int square(int num){
+    return  num*num;
+}
 
 //native 方法实现
 jstring returnString(JNIEnv *env,jobject jobj){
@@ -13,7 +16,7 @@ jstring returnString(JNIEnv *env,jobject jobj){
     return env->NewStringUTF(str);
 }
 jint returnInt(JNIEnv *env,jobject jobj, jint num1){
-    return num1 ;
+    return square(num1) ;
 }
 
 /*需要注册的函数列表，放在JNINativeMethod 类型的数组中，

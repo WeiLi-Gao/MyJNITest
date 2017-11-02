@@ -16,4 +16,6 @@ userjin 例子
 jnistatictest (动态注册例子)
 jniactitest (动态注册例子)
 
+http://blog.csdn.net/u013278099/article/details/52003759
+http://blog.csdn.net/u013278099/article/details/52135330
 
