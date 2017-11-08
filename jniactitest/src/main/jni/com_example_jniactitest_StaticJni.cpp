@@ -6,6 +6,30 @@
 #include <iostream>
 using namespace std;
 
+
+
+jint returnName(JNIEnv *env, jobject jobj){
+    char* str = "gaoweili";
+    int val = 1;
+    jmethodID method;
+    jclass clazz;
+    const char* className  = "com/example/jniactitest/StaticJni";
+    clazz = env->FindClass(className);
+    if (env->ExceptionCheck()) {
+        return 0;
+    }
+    method = env->GetStaticMethodID(clazz, "setAge", "(I)I");
+    if (env->ExceptionCheck()) {
+        return 0;
+    }
+    if (env->ExceptionCheck()) {
+        return 0;
+    }
+    jint num = env->CallStaticIntMethod(clazz, method, val);
+    return num;
+}
+
+
 int square(int num){
     return  num*num;
 }
@@ -13,10 +37,12 @@ int square(int num){
 //native 方法实现
 jstring returnString(JNIEnv *env,jobject jobj){
     char* str = "I come from activity C＋＋";
+
     return env->NewStringUTF(str);
 }
 jint returnInt(JNIEnv *env,jobject jobj, jint num1){
-    return square(num1) ;
+    return returnName(env,jobj);
+   // return square(num1) ;
 }
 
 /*需要注册的函数列表，放在JNINativeMethod 类型的数组中，

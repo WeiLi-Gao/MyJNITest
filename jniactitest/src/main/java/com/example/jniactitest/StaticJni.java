@@ -21,4 +21,12 @@ public class StaticJni {
 
     public native int getIntFromC(int num1);
     public native String getStringFromC();
+
+    public void setName(String name){
+
+    }
+
+    public static int setAge(int age){
+        return age;
+    }
 }
